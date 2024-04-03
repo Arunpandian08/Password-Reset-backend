@@ -87,7 +87,7 @@ export const forgetPassword = async (request, response) => {
     //update token to the User in database 
     await User.updateOne({ email }, { resetCode: token });
 
-    const resetURL = `http://localhost:5173/passwordreset/${encodeURIComponent(token)}`;
+    const resetURL = `https://password-reset-frontend-by-arun.netlify.app/passwordreset/${encodeURIComponent(token)}`;
 
     //Construct Email message
     const mailOptions = {

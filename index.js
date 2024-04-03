@@ -7,7 +7,7 @@ import userRouter from './Routers/userRouters.js';
 dotenv.config()
 const app = express();
 app.use(cors({
-    origin:"http://localhost:5173"
+    origin:"https://password-reset-frontend-by-arun.netlify.app"
 }));
 app.use(express.json());
 const port = process.env.PORT || 4000;
